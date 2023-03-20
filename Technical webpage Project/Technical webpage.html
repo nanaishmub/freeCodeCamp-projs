@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation Page</title>
+</head>
+            
+            <body>
+                <main id="main-doc">
+                <nav id="navbar">
+                    <header>How to Build a Basic Webpage</header>
+                    <ul>
+                     <li><a href="#What_is_a_Webpage?" class="nav-link">What is a Webpage?</a></li> 
+                     <li><a href="#The_Head" class="nav-link">The Head</a></li>
+                   <li>  <a href="#The_Body" class="nav-link">The Body</a></li>
+                    <li>  <a href="#Adding_Images" class="nav-link">Adding Images</a></li>
+                     <li> <a href="#Styling_a_Webpage" class="nav-link">Styling a Webpage</a></li>
+                     </ul>
+                </nav>
+            
+                
+                    <div>
+                    <section class="main-section" id="What_is_a_Webpage?">
+                        <header >What is a Webpage?</header>
+                        <p>A webpage is a hypertext document on the world wide web.  Web pages are delivered by a web server to the user and displayed in a web browser. A website consists of many web pages linked together under a common domain name.  The name "web page" is a metaphor of paper pages bound together into a book.</p>
+                        <p>In order to build a webpage, we use computer languages called <em>Web Languages</em>. These are: 
+                        <ol>
+                            <li><strong>HTML</strong>: <em>Hypertext Markup Language</em> is used to markup the websites content.</li>
+                            <li><strong>CSS</strong>: <em>Cascading Style Sheets</em> are used for styling the website.</li>
+                            <li><strong>JS</strong>: <em>JavaScript</em> is used to make the website ineractive. (We will not be treating here.)</li>
+                        </ol>
+                        </p>
+                       
+                    </section>
+            
+                    <section class="main-section" id="The_Head">
+                        <header >The Head</header>
+                        <p>There are basic but key HTML elements which we will be using to build our webpage.
+                        </p>
+                        <p>The first key element we use when writing HTML is  <code>DOCTYPE</code>.It is written as shown below </p>
+                        <code>< !DOCTYPE html ></code>
+                        <p>Next we add our <code>html</code> tag. This is the very first tag which comes right after the <code>DOCTYPE</code>.
+                        <code>< html ></ html ></code>
+                        </p>
+                        <p>After our <code>html</code> then comes the <code>head</code> tag.
+                            <code>< head></ head></code> The following tags are added within the <code>head</code>
+                        <ol>
+                            <li> The <code>meta</code> tag:e.g <br />
+                            <code>< meta charset="utf-8" /></code><br />
+                            </li>
+                            <li>The <code>title</code> tag:Let's say we want to make a webpage about food and we want the title of our webpage to say "All About Food", we simply write:<br />
+            <code> < title >All About Food< /title></code> 
+                            </li>
+                            <p>
+                                When we combine all these tags we have the <em>head</em> of our webpage.
+                            </p>
+                            <code> 
+                                < !DOCTYPE html ><br />
+                                < html > <br />
+                                    < head><br />
+                                    < meta charset="utf-8"/><br />
+                                    < title>All about Food< /title><br />
+                                    < /head><br />
+                                < /html ><br />
+                            </code>
+                    </section>
+            
+                    <section class="main-section" id="The_Body">
+                        <header >The Body</header>
+                        <p>There are many tags which are used within the body. But before we into those we have create our body element.</p>
+                        <code>< body>< /body></code>
+                        <p>Now we'll add a heading to our webpage using a <code>h1</code>. Let's make our heading say: Food! Food!! Food!!!</p>
+                        <code>< body><br />
+                        < h1> Food! Food!! Food!!! < /h1><br />
+                        < /body></code>
+                        <p>Next, we'll add a paragraph to our webpage for a bit of content.</p>
+                        <code>< body><br />
+                        < h1> Food! Food!! Food!!! < /h1><br />
+                        < p>Food is basic nessecity to all human. It is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals.< /p><br />
+                        < /body></code>
+                    </section>
+            
+                    <section class="main-section" id="Adding_Images">
+                        <header >Adding Images</header>
+                        <p>A webpage with just text is a boring webpage. We definitely dont want our webpage to be boring so let's add a picture and add a little life.</p>
+                        <p>To add an image, we simply use an <code>img</code> tag. Within the tag an <code>src</code> attribute is added, this contains the url from which the image is gotten. An <code>alt</code> attribute is also added to tell the browser what the alternate text for the image is.</p>
+                        <code>< body><br />
+                        < h1> Food! Food!! Food!!! < /h1><br />         
+                        < p>Food is basic nessecity to all human. It is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals.< /p><br />
+                        < img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="Food" ><br />
+                        < /body></code>
+                    </section>
+            
+                    <section class="main-section" id="Styling_a_Webpage">
+                        <header >Styling a Webpage</header>
+                        <p>In this section we will treat some basic CSS to help bring your webpage to life.</p>
+                        <p>First of all, let's add a background color to our body. To do that we select the body using the format below:</p>
+                        <code>selctor{<br />
+                            property: value;<br />
+                        }
+                        </code>
+                        <p> In this case our selector is body, our property is background-color and our value is what ever color we want e.g yellow.</p>
+                         <code>body{<br />
+                            background-color: yellow;<br />
+                        }
+                        </code>
+                        <p> Next, let's change our font to something more appealing. </p>
+                        <code>body{<br />
+                            background-color: yellow;<br />
+                            font-family: sans-serif;<br />
+                        }
+                        </code>
+                        <p>Now let's also give our text some color.</p>
+                        <code>body{<br />
+                            background-color: yellow;<br />
+                            font-family: sans-serif;<br />
+                            color: brown;<br />
+                        }
+                        </code> 
+                        <p><strong>TA-DA!!! With this you've created your very own website. Well Done!</strong></p>
+                    </section>
+        </div>
+    </main>
+</body>

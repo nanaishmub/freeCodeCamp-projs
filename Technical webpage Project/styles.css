@@ -1,0 +1,72 @@
+@media (min-width: 480px) and (max-width: 1080px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+}
+
+html {
+scroll-padding-top: 150px;
+}
+
+body{
+  background-color: rgb(236, 225, 250);
+  font-family: Calibri;
+}
+
+header{
+  font-size: 20px;
+  font-weight: 10;
+  display: block;
+  font-family: Lucida Sans Typewriter;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#navbar{
+   position: fixed;
+   top: 0;
+   left:0;
+   margin: 0;
+   padding: 0;
+   width: 300px;
+   z-index: 1;
+}
+
+#navbar ul {
+    display: block;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+#navbar ul li {
+    margin: 0 3px;
+    padding: 3px;
+    display: block;
+}
+
+a {
+  text-decoration: none;
+}
+#navbar a:active,
+#navbar a:visited,
+#navbar a:link {
+    color: black;
+}
+
+.main-section {
+  z-index: 0;
+}
+
+div {
+  margin-left: 300px;
+}
+
+code{
+  font-family: Calibri;
+  font-size: 12px;
+  line-height: 2;
+}
