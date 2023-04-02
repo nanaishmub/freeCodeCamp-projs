@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Product Landing Page</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <a href="#form"><img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8z7dKgoImoHPq5dx-tBg3sM_TS4_o0KDUQ&usqp=CAU" /></a>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how_it_works">How it Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <h2 id="catch-phrase">Airpods Made For You</h2>
+      <input id="email" type="email" name="email" placeholder="Enter your email fo up-to-date info on our products"  />
+    
+      <input id="submit" type="submit" value="Get Started" />
+
+    </form>
+
+<section id="features">
+
+  <div class="features" id="battery">
+  <i class="fa-solid fa-battery-full"></i>
+  </div>
+
+  <div class="features" id="water-proof">
+  <i class="fa-solid fa-droplet-slash"></i>
+  </div>
+
+  <div class="features" id="noise-cancelling">
+  <i class="fa-solid fa-music-slash"></i>
+  </div>
+  
+  <div class="features" id="device-switch">
+  <i class="fa-solid fa-laptop-mobile"></i>
+  </div>
+</section>
+
+    <section id="how_it_works">
+    
+    <iframe id="video" 
+    src="https://www.youtube.com/embed/watch?v=NsUIp57lxd4?"> </iframe>
+
+    </section>
+
+<section id="pricing">
+  <div class="pricing" id="airpro_2ndgen">
+    <img width="100" src="data:image/jpeg;base64,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"/>
+    <h1 class="product-name">Airpods Pro<br/> (2nd Generation)</h1>
+    <p class="price">$249</p>
+  </div>
+
+  <div class="pricing" id="air_2ndgen">
+     <img width="150" src="https://img.grouponcdn.com/stores/3XypUiieMMGKnwoHEvYyDYm1Ln8U/storespi10783675-1147x688/v1/c870x524.jpg"/>
+    <h1 class="product-name">Airpods<br/> (2nd Generation)</h1>
+    <p class="price">$129</p>
+  </div>
+
+  <div class="pricing" id="air_3rdgen">
+     <img width="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA2iPobqI-nZ8zCpYrgFRherXU1Pl3UfwyTw&usqp=CAU"/>
+    <h1 class="product-name">Airpods<br/> (3rd Generation)</h1>
+    <p class="price">$169</p>
+  </div>
+
+</section>
+
+
+<script src="https://kit.fontawesome.com/bc0edbc7fa.js" crossorigin="anonymous"></script>
+  </body>
