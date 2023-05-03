@@ -1,0 +1,182 @@
+@media screen {
+    body {
+        width: fit-content;
+    }
+    #welcome-section {
+        height: 100vh;
+    }
+}
+
+* {
+    --color-1: #F6AF65;
+    --color-2: #1b257e;
+    --color-3: #00C2D1;
+    --color-4: #FFF347;
+  }
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+#welcome-section, #projects, #contact {
+    padding: 10px 0 90px 0;
+}
+
+header {
+    background-color: var(--color-3);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    color: var(--color-1);
+}
+
+header h1 {
+    position: relative;
+    padding: 4px 16px;
+    overflow: hidden;
+}
+
+header a {
+    width: 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+header a:active,
+header a:visited,
+header a:link {
+    color: var(--color-4);
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    width: 50%;
+    max-width: 300px;
+    height: 40px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+#navbar ul li {
+    margin: 0 3px;
+    padding: 3px;
+    display: block;
+}
+#welcome-section {
+    height: 100vh;
+    background: repeating-linear-gradient(
+        45deg,
+      var(--color-1) 0%, 
+      var(--color-1) 30%,
+      var(--color-4) 30%,
+      var(--color-4) 100%);
+}
+
+#welcome-section h1 {
+    bottom: 100px;
+    padding-top: 245px;
+    font-size: 100px;
+}
+
+#welcome-section p {
+    font-size: 50px;
+    padding: 0 auto;
+}
+
+.about {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-2)
+}
+
+#projects {
+    background-color: var(--color-2);
+    gap: 20px;
+}
+
+#projects h1 {
+    color: var(--color-1);
+    font-size: 2.5em;
+    padding-top: 10px;
+}
+
+.projects {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.projects-tile {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projects-tile a {
+   margin-bottom: 20px;
+   box-shadow: 0px 0px 22px black;
+}
+
+.projects-tile a p {
+    background-color: var(--color-1);
+    margin-top: -5px;
+    margin-bottom: 0;
+    padding: 10px;
+    color: white;
+}
+
+.projects-tile p {
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--color-1);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    color: black;
+    font-weight: bolder;
+}
+
+#contact {
+    background-color: var(--color-4);
+    color: var(--color-2);
+}
+
+i {
+    width: 50px;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 30px;
+    color: var(--color-2);
+    font-weight: bolder;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: calibri;
+    font-size: 1.5em;
+   text-align: left;
+    height: 70px;
+    justify-content: left;
+    padding-top: 20px;
+}
