@@ -1,0 +1,138 @@
+
+<!-- saved from url=(0109)https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="">--><base href=".">
+  <script>
+    window.__frameId = 'fcc-main-frame';
+    window.onerror = function(msg) {
+      const string = msg.toLowerCase();
+      if (string.includes('script error')) {
+        msg = 'Build error, open your browser console to learn more.';
+      }
+      console.log(msg);
+      return true;
+    };
+    document.addEventListener('click', function(e) {
+      let element = e.target;
+      while(element && element.nodeName !== 'A') {
+        element = element.parentElement;
+      }
+      if (element && element.nodeName === 'A' && new URL(element.href).hash === '') {
+        e.preventDefault();
+        window.parent.window.alert(
+          i18nContent.t('misc.iframe-alert', { externalLink: element.href })
+        )
+      }
+      if (element) {
+        const href = element.getAttribute('href');
+        if (!href || href[0] !== '#' && !href.match(/^https?:\/\//)) {
+          e.preventDefault();
+        }
+      }
+    }, false);
+    document.addEventListener('submit', function(e) {
+      const action = e.target.getAttribute('action');
+      if (!action || !action.match(/https?:\/\//)) {
+        e.preventDefault();
+      }
+    }, false);
+  </script>
+<link rel="stylesheet" data-href="styles.css"><style class="fcc-injected-styles">body{
+  text-align: center;
+  font-family: brittanic; 
+  width: 100%;
+  color: #ffffff;
+  font-size:18px;
+  background-image: url("https://i.pinimg.com/originals/1f/82/f0/1f82f02350a5257e7f970cc854d5a1cb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+form{
+  margin: auto;
+
+}
+label{
+  display: block;
+  margin: 1rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+input{
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  height: 2em
+}
+fieldset{
+  border: 0;
+  padding: 2rem 0;
+}
+select{
+ width: 100%;
+ display: flex;
+ height: 2em;
+}
+textarea{
+  width: 100%;
+}</style></head>
+.class{
+  background-color: green;
+}
+  
+    
+    <body data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed=""><h1 id="title">
+      Students' Survey Form
+    </h1>
+    <p id="description">
+      Please fill out the following form
+    </p>
+  
+  
+    <form id="survey-form">
+      <div class="square">
+    <fieldset>
+      <label id="name-label">Name:
+        <input id="name" type="text" name="full-name" placeholder="Enter your name" required="">
+        </label>
+        <label id="email-label">Email:
+          <input id="email" type="email" name="email-address" placeholder="Enter your email" required="">
+          </label>
+          <label id="number-label">Class:
+            <input id="number" name="class" type="number" placeholder="Class" min="10" max="12">
+    </label></fieldset>
+    <fieldset>
+      <label>Department
+        <select id="dropdown">
+          <option>Select your department</option> 
+          <option>Science</option> 
+          <option>Arts</option> 
+          <option>Commercial</option> 
+          </select>
+          </label>
+          <label>Preffered Subjects
+            <input type="checkbox" name="subjects">Mathematics
+            <input type="checkbox" name="subjects">English Language
+            <input type="checkbox" name="subjects">Chemistry
+            <input type="checkbox" name="subjects">Physics
+            <input type="checkbox" name="subjects">Biology
+            <input type="checkbox" name="subjects">Further Mathematics
+            <input type="checkbox" name="subjects">Economics
+            <input type="checkbox" name="subjects">French
+            <input type="checkbox" name="subjects">Arabic
+            <input type="checkbox" name="subjects">ICT
+            </label>
+    </fieldset>
+    <fieldset>       
+         <label>Most used platform
+            <input type="radio" name="platform-used">Library
+            <input type="radio" name="platform-used">Online resources
+            <input type="radio" name="platform-used">Others
+            </label>
+            <label>Any comments/suggestions?
+              <textarea placeholder="Leave your comment here" rows="3" cols="30"></textarea>
+            </label></fieldset></div>
+    </form>
+  
+  <input id="submit" type="submit" value="Done">
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body></html>

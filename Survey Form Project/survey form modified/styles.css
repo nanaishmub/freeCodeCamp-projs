@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  background-color: rgb(40, 20, 59);
+  color: white;
+  font-family: sans-serif;
+}
+
+#title, #description {
+  text-align: center;
+}
+

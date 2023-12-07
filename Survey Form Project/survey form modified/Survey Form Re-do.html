@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+  <h1 id="title">
+    Students' Survey Form
+  </h1>
+  <p id="description">
+    Please fill out the following form
+  </p>
+</head>
+
+  <body>
+
+    <form id="survey-form">
+
+      <div class="square">
+
+    <fieldset id="field-1">
+
+      <label id="name-label">Name:
+        <input id="name" type="text" name="full-name" placeholder="Enter your name" required/>
+      </label>
+
+      <label id="email-label">Email:
+        <input id="email" type="email" name="email-address" placeholder="Enter your email" required/>
+      </label>
+
+      <label id="number-label">Class:
+        <input id="number" name="class" type="number" placeholder="Class" min="10" max="12"/>
+      </label>
+
+      <label>Department:
+        <select id="dropdown">
+          <option>Select your department</option> 
+          <option>Science</option> 
+          <option>Arts</option> 
+          <option>Commercial</option> 
+        </select>
+      </label>
+
+    </fieldset>
+
+    <fieldset id="field-2">
+      <h3> Preffered Subjects</h3>
+      <label id="preffered-subs">
+        <input type="checkbox" name="subjects" value="Mathematics"/> Mathematics
+        <input type="checkbox" name="subjects" value="English Language"/> English Language
+        <input type="checkbox" name="subjects" value="Chemistry"/> Chemistry
+        <input type="checkbox" name="subjects"value="Physics"/> Physics 
+        <input type="checkbox" name="subjects" value="Biology"/> Biology
+        <input type="checkbox" name="subjects" value="Further Mathematics"/> Further Mathematics
+        <input type="checkbox" name="subjects" value="Economics"/> Economics
+        <input type="checkbox" name="subjects" value="French"/> French
+        <input type="checkbox" name="subjects" value="Arabic"/> Arabic
+        <input type="checkbox" name="subjects" value="ICT"/> ICT
+      </label>
+    </fieldset>
+
+    <fieldset id="field-3">   
+      <h3>Most used platform  </h3>  
+      <label>
+        Library <input type="radio" name="platform-used" value="Library"/>
+        Online resources <input type="radio" name="platform-used" value="Online resources"/>
+        Others<input type="radio" name="platform-used" value="Others"/>
+      </label>
+
+      <label>Any comments/suggestions?
+        <textarea placeholder="Leave your comment here" rows="3" cols="30"></textarea>
+      </label>
+    </fieldset>
+
+    </form>
+
+  </body>
+
+  <input id="submit" type="submit" value="Done"/>
+</div>
+
+</html>
+
+
+
+
+
+
+

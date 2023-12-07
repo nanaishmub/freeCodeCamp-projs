@@ -1,0 +1,120 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">
+      Students' Survey Form
+    </h1>
+    <p id="description">
+      Please fill out the following form
+    </p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <div class="square">
+    <fieldset>
+      <label id="name-label">Name:
+        <input id="name" type="text" name="full-name" placeholder="Enter your name" required/>
+        </label>
+        <label id="email-label">Email:
+          <input id="email" type="email" name="email-address" placeholder="Enter your email" required/>
+          </label>
+          <label id="number-label">Class:
+            <input id="number" name="class" type="number" placeholder="Class" min="10" max="12"/>
+            <label>Department:
+        <select id="dropdown">
+          <option>Select your department</option> 
+          <option>Science</option> 
+          <option>Arts</option> 
+          <option>Commercial</option> 
+          </select>
+          </label>
+    </fieldset>
+    <fieldset>
+          <label>Preffered Subjects
+            <input type="checkbox" name="subjects" value="Mathematics"/>Mathematics
+            <input type="checkbox" name="subjects" value="English Language"/>English Language
+            <input type="checkbox" name="subjects" value="Chemistry"/>Chemistry
+            <input type="checkbox" name="subjects"value="Physics"/>Physics
+            <input type="checkbox" name="subjects" value="Biology"/>Biology
+            <input type="checkbox" name="subjects" value="Further Mathematics"/>Further Mathematics
+            <input type="checkbox" name="subjects" value="Economics"/>Economics
+            <input type="checkbox" name="subjects" value="French"/>French
+            <input type="checkbox" name="subjects" value="Arabic"/>Arabic
+            <input type="checkbox" name="subjects" value="ICT"/>ICT
+            </label>
+    </fieldset>
+    <fieldset>       
+         <label>Most used platform
+            <input type="radio" name="platform-used" value="Library"/>Library
+            <input type="radio" name="platform-used" value="Online resources/>Online resources
+            <input type="radio" name="platform-used" value="Others"/>Others
+            </label>
+            <label>Any comments/suggestions?
+              <textarea placeholder="Leave your comment here" rows="3" cols="30"></textarea>
+            </fieldset>
+    </form>
+  </body>
+  <input id="submit" type="submit" value="Done"/>
+  </div.
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  text-align: center;
+  font-family: brittanic; 
+  width: 100%;
+  color: #ffffff;
+  font-size:18px;
+  background-image: url("https://i.pinimg.com/originals/1f/82/f0/1f82f02350a5257e7f970cc854d5a1cb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+form{
+  margin: auto;
+
+}
+label{
+  display: block;
+  margin: 1rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+input{
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 10;
+  padding-bottom: 10;
+  height: 2em
+}
+fieldset{
+  border: ;
+  padding: 2em 0;
+}
+select{
+ width: 100%;
+ display: block;
+ height: 2em;
+}
+textarea{
+  width: 100%;
+}
+.square{
+  background-color: #3a7d8f;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+** end of undefined **
+
