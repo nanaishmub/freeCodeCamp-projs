@@ -16,24 +16,22 @@
   <body>
 
     <form id="survey-form">
-
       <div class="square">
 
     <fieldset id="field-1">
-
-      <label id="name-label">Name:
+      <label for="name">Name:
         <input id="name" type="text" name="full-name" placeholder="Enter your name" required/>
       </label>
 
-      <label id="email-label">Email:
+      <label for="email">Email:
         <input id="email" type="email" name="email-address" placeholder="Enter your email" required/>
       </label>
 
-      <label id="number-label">Class:
+      <label for="number">Class:
         <input id="number" name="class" type="number" placeholder="Class" min="10" max="12"/>
       </label>
 
-      <label>Department:
+      <label for="dropdown">Department:
         <select id="dropdown">
           <option>Select your department</option> 
           <option>Science</option> 
@@ -45,33 +43,31 @@
 
     <fieldset id="field-2">
       <h3> Preffered Subjects</h3>
-      <label id="preffered-subs">
-        <input class="inline" type="checkbox" name="subjects" value="Mathematics"/> Mathematics
-        <input class="inline" type="checkbox" name="subjects" value="English Language"/> English Language
-        <input class="inline" type="checkbox" name="subjects" value="Chemistry"/> Chemistry
-        <input class="inline" type="checkbox" name="subjects"value="Physics"/> Physics 
-        <input class="inline" type="checkbox" name="subjects" value="Biology"/> Biology
-        <input class="inline" type="checkbox" name="subjects" value="Further Mathematics"/> Further Mathematics
-        <input class="inline" type="checkbox" name="subjects" value="Economics"/> Economics
-        <input class="inline" type="checkbox" name="subjects" value="French"/> French
-        <input class="inline" type="checkbox" name="subjects" value="Arabic"/> Arabic
-        <input class="inline" type="checkbox" name="subjects" value="ICT"/> ICT
-      </label>
+        <label for="Mathematics"><input class="inline" id="Mathematics" type="checkbox" name="subjects" value="Mathematics"/> Mathematics</label>
+        <label for="English Language"><input class="inline" id="English Language" type="checkbox" name="subjects" value="English Language"/> English Language</label>
+        <label for="Chemistry"><input class="inline" id="Chemistry" type="checkbox" name="subjects" value="Chemistry"/> Chemistry</label>
+        <label for="Physics"><input class="inline" id="Physics" type="checkbox" name="subjects" value="Physics"/> Physics </label>
+        <label for="Biology"><input class="inline" id="Biology" type="checkbox" name="subjects" value="Biology"/> Biology</label>
+        <label for="Further Mathematics"><input class="inline" id="Further Mathematics" type="checkbox" name="subjects" value="Further Mathematics"/> Further Mathematics</label>
+        <label for="Economics"><input class="inline" id="Economics" type="checkbox" name="subjects" value="Economics"/> Economics</label>
+        <label for="French"><input class="inline" id="French" type="checkbox" name="subjects" value="French"/> French</label>
+        <label for="Arabic"><input class="inline" id="Arabic" type="checkbox" name="subjects" value="Arabic"/> Arabic</label>
+        <label for="ICT"><input class="inline" id="ICT" type="checkbox" name="subjects" value="ICT"/> ICT</label>
     </fieldset>
 
     <fieldset id="field-3">   
       <h3>Most used platform  </h3>  
-      <label>
-        <input class="inline" type="radio" name="platform-used" value="Library"/> Library 
-        <input class="inline" type="radio" name="platform-used" value="Online resources"/> Online resources
-        <input class="inline" type="radio" name="platform-used" value="Others"/> Others
-      </label>
-
+      <label for="Library"><input class="inline" id="Library" type="radio" name="platform-used" value="Library"/> Library </label>
+       <label for="Online resources"> <input class="inline" id="Online resources" type="radio" name="platform-used" value="Online resources"/> Online resources</label>
+        <label for="Others"><input class="inline" value="Others" type="radio" name="platform-used" value="Others"/> Others</label>
+    </fieldset>
+     
+    <fieldset>
       <label>Any comments/suggestions?
         <textarea placeholder="Leave your comment here" rows="3" cols="30"></textarea>
       </label>
     </fieldset>
-     
+    
     </form>
 
   </body>

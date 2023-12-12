@@ -17,6 +17,11 @@ form {
 fieldset {
   border: 0;
   padding: 2rem 0;
+  border-bottom: 5px solid rgb(239, 221, 255);
+}
+
+fieldset:last-of-type{
+  border-bottom: none;
 }
 
 #title, #description {
@@ -32,6 +37,17 @@ input, textarea, select{
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
+  border: 0;
 }
 
+.inline {
+  vertical-align: middle;
+  position: relative ;
+  margin: 0 1rem 0 0;
+  display: inline;
+  width: unset;
+}
 
+input[type="submit"] {
+  margin-bottom: 15px;
+}
